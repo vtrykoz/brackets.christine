@@ -1,0 +1,11 @@
+{
+    "name": "christine",
+    "title": "Christine",
+    "description": "Christine Language Support",
+    "version": "1.0.0",
+    "author": "vtrykoz vtrykoz@icloud.com",
+    "license": "<MIT>",
+    "engines": {
+        "brackets": ">=1.6.0"
+    }
+}

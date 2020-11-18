@@ -10,7 +10,7 @@ define(function (require, exports, module) {
         start: [
             {
                 regex: /[\t\ ]*(\w+)\ *(([.#][\w-_]+\ *)*)[\t\ ]*$/,
-                token: "keyword",
+                token: "tag",
                 indent : "true",
                 sol: "true"
             },
@@ -22,6 +22,11 @@ define(function (require, exports, module) {
             {
                 regex: /"(?:[^\\]|\\.)*?(?:"|$)/,
                 token: "string"
+            },
+            {
+                regex: /([\t\ ]*[\w-_@$&#]+ *)(=)(.*)$/,
+                token: ["attribute","punctuation","def"],
+                sol: "true"
             }
         ]
     });
